@@ -1,0 +1,50 @@
+h1,
+h2 {
+  text-align: center;
+}
+
+.product_page {
+  text-align: center;
+}
+
+.product_image {
+  margin: 0 auto;
+}
+
+.product_img {
+  width: 300px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.form input {
+  padding: 5px;
+  margin: 0 0 10px 0;
+  border-radius: 10px;
+  border: 1px solid rgb(27, 22, 22);
+  outline: none;
+}
+
+.form button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+}

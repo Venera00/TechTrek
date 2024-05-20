@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import phone from "../../assets/smartpone.jpg";
+import samsung from "../../assets/samsung.jpg";
 import styles from "./MainPage.module.scss";
 
 const MainPage = () => {
@@ -17,23 +19,40 @@ const MainPage = () => {
         <h1>TechTrek X Smartphone</h1>
       </header>
       <main>
-        <section className="product-page">
+        <section className={styles.product_page}>
           <h2>Product Details</h2>
-          <div className="product-info">
-            <div className="product-image">
-              {/* <img src="techtrek-x.jpg" alt="TechTrek X Smartphone" /> */}
+          <div className={styles.product_info}>
+            <div className={styles.product_image}>
+              <img
+                src={samsung}
+                className={styles.product_img}
+                alt="TechTrek Smartphone"
+              />
             </div>
-            <div className="product-description">
-              <p>Product description goes here...</p>
+            <div className={styles.product_description}>
+              <p>
+                Elevate your digital experience with the revolutionary TechTrek
+                X smartphone, meticulously crafted to redefine convenience,
+                efficiency, and style in the palm of your hand.
+              </p>
+
+              <img src={phone} alt="TechTrek X Smartphone" />
+              <h3>Powerful Performance</h3>
+              <p>
+                Powered by cutting-edge technology, the TechTrek X delivers
+                lightning-fast performance and responsiveness. Equipped with a
+                powerful processor and ample RAM, it effortlessly handles
+                multitasking, gaming, and productivity tasks with ease.
+              </p>
             </div>
           </div>
         </section>
 
-        <section className="order-form">
+        <section className={styles.order_form}>
           <h2>Pre-Order Now</h2>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className={styles.form}>
             <label>
-              Name:
+              <p>Name:</p>
               <input
                 type="text"
                 value={name}
@@ -42,7 +61,7 @@ const MainPage = () => {
               />
             </label>
             <label>
-              Email:
+              <p>Email:</p>
               <input
                 type="email"
                 value={email}
@@ -51,7 +70,7 @@ const MainPage = () => {
               />
             </label>
             <label>
-              Quantity:
+              <p>Quantity:</p>
               <input
                 type="number"
                 value={quantity}
