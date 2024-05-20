@@ -6,11 +6,8 @@ const MainPage = () => {
   const [email, setEmail] = useState("");
   const [quantity, setQuantity] = useState(1);
 
-  // Function to handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Perform validation here
-    // For simplicity, let's just log the form data
     console.log({ name, email, quantity });
   };
 
@@ -20,13 +17,11 @@ const MainPage = () => {
         <h1>TechTrek X Smartphone</h1>
       </header>
       <main>
-        {/* Product Page */}
         <section className="product-page">
           <h2>Product Details</h2>
           <div className="product-info">
             <div className="product-image">
-              {/* Insert product images or videos here */}
-              <img src="techtrek-x.jpg" alt="TechTrek X Smartphone" />
+              {/* <img src="techtrek-x.jpg" alt="TechTrek X Smartphone" /> */}
             </div>
             <div className="product-description">
               <p>Product description goes here...</p>
@@ -34,7 +29,6 @@ const MainPage = () => {
           </div>
         </section>
 
-        {/* Order form */}
         <section className="order-form">
           <h2>Pre-Order Now</h2>
           <form onSubmit={handleSubmit}>
@@ -71,18 +65,14 @@ const MainPage = () => {
           </form>
         </section>
 
-        {/* News Feed */}
         <section className="news-feed">
           <h2>News Feed</h2>
-          {/* Insert news updates here */}
+
           <ul>
             <li>Release date announced for TechTrek X!</li>
             <li>New features revealed.</li>
-            {/* Add more news items */}
           </ul>
         </section>
-
-        {/* Contact information */}
         <section className="contact-info">
           <h2>Contact Us</h2>
           <p>Email: info@techtrek.com</p>
