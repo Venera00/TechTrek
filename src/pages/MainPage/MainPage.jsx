@@ -11,6 +11,9 @@ const MainPage = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log({ name, email, quantity });
+
+    setName("");
+    setEmail("");
   };
 
   return (
@@ -80,7 +83,9 @@ const MainPage = () => {
                 required
               />
             </label>
-            <button type="submit">Place Order</button>
+            <button type="submit" className={styles.btn}>
+              Place Order
+            </button>
           </form>
         </section>
 
